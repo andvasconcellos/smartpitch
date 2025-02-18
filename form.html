@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMARTPITCH IA V1.0</title>
+</head>
+<body>
+  <h1>Pesquise seu Lead</h1>
+  <form action="/generate" method="post">
+      <label for="cliente_id">Selecione o Cliente:</label>
+      <select id="cliente_id" name="cliente_id" required>
+          <option value="eptv">EPTV</option>
+          <option value="GMD">GMD</option>
+          <option value="helexia">HELEXIA ENERGIA</option>
+          <option value="incitat">INCITAT</option>
+          <option value="risomed">RISOMED</option>
+          <option value="spotflow">SPOTFLOW</option>
+          <option value="tag">TAG BUSINESS SOLUTIONS</option>
+      </select><br><br>
+
+      <label for="company">Nome da empresa:</label>
+      <input type="text" id="company" name="company" required><br><br>
+
+      <label for="contato">Nome do contato:</label>
+      <input type="text" id="contato" name="contato" required><br><br>
+
+      <label for="linkedin">Link do LinkedIn:</label>
+      <input type="url" id="linkedin" name="linkedin" required><br><br>
+
+      <label for="dados">Informações Adicionais:</label>
+      <input type="text" id="dados" name="dados" required><br><br>
+
+      <button type="submit">Gerar Sugestão</button>
+  </form>
+</body>
+</html>
